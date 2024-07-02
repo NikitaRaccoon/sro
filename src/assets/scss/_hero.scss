@@ -1,0 +1,630 @@
+.hero {
+
+
+    height: auto;
+    position: relative;
+
+    &__backgorund {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        position: sticky;
+        top: 0;
+        left: 0;
+        border-bottom: 3px solid #fff;
+        filter: brightness(0.5);
+    }
+
+    .background-video-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__top {
+        height: 140vh;
+        position: relative;
+        width: 100%;
+        top: 0;
+        z-index: 3;
+        padding: 14rem 0 10rem 0;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+    }
+
+    &__top-text {
+        color: $font3;
+        font-size: 7rem;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 0%;
+    }
+
+    &__top-stat {
+        display: flex;
+        justify-content: flex-end;
+        gap: 14rem;
+    }
+
+    &__top-col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        * {
+            color: $font3;
+        }
+
+        p {
+            font-size: 9.4rem;
+            font-weight: 400;
+            line-height: 110%;
+        }
+
+        span {
+            font-size: 3.2rem;
+            font-weight: 600;
+            line-height: 140%;
+        }
+    }
+
+    &__top-buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 5.4rem;
+
+        .btn.md.empty {
+            background: transparent;
+            border-color: #fff;
+
+            span {
+                color: #fff;
+            }
+
+            &:hover {
+                border-color: #000;
+                background-color: #000;
+            }
+        }
+
+    }
+
+    &__top-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20vh;
+        margin-bottom: 20vh;
+    }
+
+    &__center {
+        background-color: $background2;
+        padding: 14rem 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__center-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 8rem;
+        column-gap: 4rem;
+    }
+
+    &__center-item {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        width: 100%;
+        max-width: 88.8rem;
+
+        p {
+            font-size: 4.4rem;
+            font-weight: 700;
+            line-height: 110%;
+        }
+
+        span {
+            color: $font2;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 160%;
+        }
+    }
+
+    &__bottom {
+        padding: 14rem 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__bottom-wrapper {
+        display: flex;
+        gap: 10rem;
+        justify-content: space-between;
+    }
+
+    &__bottom-title {
+        font-size: 7rem;
+        font-weight: 700;
+        line-height: 110%;
+        flex: 0 0 73.6rem;
+        color: $font3;
+    }
+
+    &__bottom-text {
+
+        flex: 0 0 88.8rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 12.6rem;
+        gap: 4rem;
+
+        p {
+            color: $font3;
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 150%;
+            letter-spacing: 0%;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+
+            span {
+                font-size: 2.4rem;
+                font-weight: 700;
+                line-height: 160%;
+                letter-spacing: 1%;
+                color: $color1;
+            }
+
+            svg {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+    }
+
+    &__account {
+        background-color: $background2;
+        position: relative;
+        z-index: 2;
+        padding: 14rem 0;
+
+        .container {
+            padding: 0;
+        }
+
+    }
+
+    &__account-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    &__account-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 0 6rem;
+    }
+
+    &__account-title {
+        font-size: 7rem;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 0%;
+        flex: 0 0 73.6rem;
+    }
+
+    &__account-text {
+        color: $font2;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: 0%;
+        flex: 0 0 88.8rem;
+    }
+
+    &__account-slider {
+        padding: 0 6rem;
+
+        .swiper-slide {
+            max-width: 73.6rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .hero {
+
+        &__backgorund {
+            height: 100vh;
+        }
+
+        &__top {
+            height: 100vh;
+            width: 100%;
+            top: 0;
+            z-index: 3;
+            padding: 4rem 0 4rem 0;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+            }
+        }
+
+        &__top-text {
+            color: $font3;
+            font-size: 56px;
+            margin-bottom: 18rem;
+        }
+
+        &__top-stat {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        &__top-col {
+            display: flex;
+            flex-direction: column;
+
+            * {
+                color: $font3;
+            }
+
+            p {
+                font-size: 64px;
+            }
+
+            span {
+                font-size: 36px;
+            }
+        }
+
+        &__top-buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 1.2rem;
+            position: static;
+            z-index: 2;
+            top: 70%;
+            width: 100%;
+            right: 0;
+
+            a {
+                width: 100%;
+                max-width: 320px;
+                justify-content: center;
+            }
+        }
+
+        &__center {
+            background-color: $background2;
+            padding: 8rem 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        &__center-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 2.4rem;
+            column-gap: 0;
+        }
+
+        &__center-item {
+            max-width: 100%;
+            padding: 2.4rem 0;
+
+            p {
+                font-size: 4.2rem;
+            }
+
+            span {
+                font-size: 2.6rem;
+            }
+        }
+
+        &__bottom {
+            padding: 6.4rem 0;
+        }
+
+        &__bottom-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20rem;
+            justify-content: space-between;
+        }
+
+        &__bottom-title {
+            font-size: 4.2rem;
+            flex: none;
+        }
+
+        &__bottom-text {
+            padding-top: 0;
+            gap: 4rem;
+            flex: none;
+
+            p {
+                color: $font3;
+                font-size: 2.6rem;
+                margin-bottom: 4rem;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: .8rem;
+
+                span {
+                    font-size: 2.8rem;
+                }
+
+                svg {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+
+        &__account {
+
+            padding: 6.4rem 0;
+
+            .container {
+                padding: 0;
+            }
+
+        }
+
+        &__account-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        &__account-row {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 2.4rem;
+            padding: 0 2rem;
+        }
+
+        &__account-title {
+            font-size: 4.2rem;
+            flex: none;
+        }
+
+        &__account-text {
+            color: $font2;
+            font-size: 2.6rem;
+            flex: none;
+            margin-bottom: 0;
+        }
+
+        &__account-slider {
+            padding: 0 2rem;
+
+            .swiper-slide {
+                max-width: 73.6rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+
+        &__top {
+            height: 90vh;
+            width: 100%;
+            z-index: 3;
+            padding: 4rem 0 4rem 0;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+            }
+        }
+
+        &__top-text {
+            color: $font3;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 140%;
+            margin-bottom: 18rem;
+        }
+
+        &__top-stat {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4rem;
+        }
+
+        &__top-col {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            * {
+                color: $font3;
+            }
+
+            p {
+                font-size: 44px;
+            }
+
+            span {
+                font-size: 24px;
+            }
+        }
+
+        &__top-buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 1.2rem;
+            position: static;
+            z-index: 2;
+            top: 70%;
+            width: 100%;
+            right: 0;
+
+            a {
+                width: 100%;
+                max-width: 320px;
+                justify-content: center;
+            }
+        }
+
+        &__center {
+            background-color: $background2;
+            padding: 8rem 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        &__center-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 2.4rem;
+            column-gap: 0;
+        }
+
+        &__center-item {
+            max-width: 100%;
+            padding: 2.4rem 0;
+
+            p {
+                font-size: 3.2rem;
+            }
+
+            span {
+                font-size: 1.6rem;
+            }
+        }
+
+        &__bottom {
+            padding: 6.4rem 0;
+        }
+
+        &__bottom-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20rem;
+            justify-content: space-between;
+        }
+
+        &__bottom-title {
+            font-size: 3.2rem;
+            flex: none;
+        }
+
+        &__bottom-text {
+            padding-top: 0;
+            gap: 4rem;
+            flex: none;
+
+            p {
+                color: $font3;
+                font-size: 1.6rem;
+                margin-bottom: 4rem;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: .8rem;
+
+                span {
+                    font-size: 1.8rem;
+                }
+
+                svg {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+
+        &__account {
+
+            padding: 6.4rem 0;
+
+            .container {
+                padding: 0;
+            }
+
+        }
+
+        &__account-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        &__account-row {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 2.4rem;
+            padding: 0 2rem;
+        }
+
+        &__account-title {
+            font-size: 3.2rem;
+            flex: none;
+        }
+
+        &__account-text {
+            color: $font2;
+            font-size: 1.6rem;
+            flex: none;
+            margin-bottom: 0;
+        }
+
+        &__account-slider {
+            padding: 0 2rem;
+
+            .swiper-slide {
+                max-width: 32rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

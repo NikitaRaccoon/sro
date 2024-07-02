@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/select2.css">
+    <link rel="stylesheet" href="assets/css/simplebar.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=41fdbd90-4dd8-4661-987f-5ad6859ef9f2&lang=ru_RU" type="text/javascript"></script>
+    <title>СРО ССКО</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="/" class="header__logo">
+                <img src="assets/images/new-logo2.png" alt="">         
+            </a>
+            <div class="header__wrapper">
+                <nav class="header__nav">
+                    <a href="">об ассоциации</a>
+                    <a href="">документы</a>
+                    <a href="">контроль</a>
+                    <a href="">ответственность</a>
+                    <a href="">информация</a>
+                </nav>
+                <div class="header__search">
+                    <input type="text" placeholder="найти">
+                    <a href="#" class="header__search-btn">
+                        <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path id="Vector" d="M11.5 2C6.25 2 2 6.25 2 11.5C2 16.74 6.25 21 11.5 21C16.74 21 21 16.74 21 11.5C21 6.25 16.74 2 11.5 2ZM18.5 18.5L22 22" stroke="#27A193" stroke-opacity="1.000000" stroke-width="3.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                        </svg>   
+                        <span>поиск</span>
+                    </a>
+                </div>
+                <div class="header__account">
+                    <a href="#" class="">
+                        <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <clipPath id="clip244_3057">
+                                <rect id="icon/user" width="24.000000" height="24.000000" fill="rgb(39, 161, 147)" fill-opacity="0"/>
+                            </clipPath>
+                        </defs>
+                        <g clip-path="url(#clip244_3057)">
+                            <path id="combo shape" d="M12 11C14.2092 11 16 9.20911 16 7C16 4.79089 14.2092 3 12 3C9.79077 3 8 4.79089 8 7C8 9.20911 9.79077 11 12 11ZM12 21C15.866 21 19 19.2091 19 17C19 14.7909 15.866 13 12 13C8.13403 13 5 14.7909 5 17C5 19.2091 8.13403 21 12 21Z" clip-rule="evenodd" fill="rgb(39, 161, 147)" fill-opacity="0.900000" fill-rule="evenodd"/>
+                        </g>
+                    </svg>
+                        <span>личный кабинет</span>
+                    </a>
+                </div>
+                <a href="#" class="header__burger">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="breadcrumbs">
+        <a href="#">пункт меню /</a> 
+        <a href="#">пункт меню /</a>  
+        <a href="#">пункт меню /</a>  
+        <a href="#">пункт меню /</a>  
+        <a href="" class="current-page">пункт меню</a> 
+    </div>
+    <main>
+        <section class="contacts">
+            <div class="container">
+                <h2>контакты</h2>
+                <div class="contacts__wrapper">
+                    <div class="contacts__info">
+                        <div class="contacts__info-wrapper">
+                            <div class="contacts__row">
+                                <div class="contacts__item">
+                                    <div class="contacts__item-name">
+                                        телефон
+                                    </div>
+                                    <a href="tel:+7 (4012) 97-31-31">+7 (4012) 97-31-31</a>
+                                </div>
+                                <div class="contacts__item">
+                                    <div class="contacts__item-name">
+                                        электронная почта
+                                    </div>
+                                    <a href="mailto:mail@npssko.ru">mail@npssko.ru</a>
+                                </div>
+                            </div>
+                            <div class="contacts__row">
+                                <div class="contacts__item">
+                                    <div class="contacts__item-name">
+                                        адрес места нахождения
+                                    </div>
+                                    <p>Калининград, ул. Космонавта Пацаева, д. 6А, офис 1</p>
+                                </div>
+                            </div>
+                            <div class="contacts__row">
+                                <div class="contacts__item">
+                                    <div class="contacts__item-name">
+                                        режим работы
+                                    </div>
+                                    <p>Пн.–Пт. с 9:00 до 17:30</p>
+                                </div>
+                                <div class="contacts__item social">
+                                    <div class="contacts__item-name">
+                                        социальные сети
+                                    </div>
+                                    <div class="contacts__item-wrapper">
+                                        <a href=""><img src="assets/images/Vk.svg" alt=""></a>
+                                        <a href=""><img src="assets/images/Telegram.svg" alt=""></a>
+                                        <a href=""><img src="assets/images/Whatsapp.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__feedback">
+                            <h3>обратная связь</h3>
+                            <form action="">
+                                <div class="contacts__feedback-wrapper">
+                                    <div class="contacts__feedback-row">
+                                        <div class="contacts__feedback-item">
+                                            <input type="text" placeholder="организация">
+                                        </div>
+                                        <div class="contacts__feedback-item">
+                                            <input type="tel" placeholder="телефон">
+                                        </div>
+                                        <div class="contacts__feedback-item">
+                                            <input type="email" placeholder="электронная почта">
+                                        </div>
+                                    </div>
+                                    <div class="contacts__feedback-item">
+                                        <textarea name="" id="" placeholder="сообщение"></textarea>
+                                    </div>
+                                    <div class="contacts__feedback-accept">
+                                        <div class="info__call-accept">
+                                            <input id="info-call-accept" type="checkbox" name="">
+                                            <label for="info-call-accept"></label>
+                                            <p>Отправляя данную форму, я соглашаюсь с <a href="#">политикой обработки персональных данных</a></p>
+                                        </div>
+                                        <input type="submit" value="отправить">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div style="height: 100%;" id="contacts__map" class="contacts__map"></div>
+                </div>
+                <h3>сотрудники</h3>
+                <div class="contacts__staff">
+                    <div class="contacts__staff-item">
+                        <div class="contacts__staff-photo">
+                            <img src="assets/images/staff-1.jpg" alt="">
+                        </div>
+                        <div class="contacts__staff-wrapper">
+                            <div class="contacts__staff-post">директор АНП СРО ССКО</div>
+                            <div class="contacts__staff-name">бабаянц борис аршамович</div>
+                            <div class="contacts__staff-phone">
+                                <p>добавочный номер телефона (приемная)</p>
+                                <span>101</span>
+                            </div>
+                            <div class="contacts__staff-email">
+                                <p>электронная почта</p>
+                                <span>mail@npssko.ru</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__staff-item">
+                        <div class="contacts__staff-photo">
+                            <img src="assets/images/staff-2.jpg" alt="">
+                        </div>
+                        <div class="contacts__staff-wrapper">
+                            <div class="contacts__staff-post">заместитель директора</div>
+                            <div class="contacts__staff-name">боровская любовь анатольевна</div>
+                            <div class="contacts__staff-phone">
+                                <p>добавочный номер телефона (приемная)</p>
+                                <span>150</span>
+                            </div>
+                            <div class="contacts__staff-email">
+                                <p>электронная почта</p>
+                                <span>mail@npssko.ru</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__staff-item">
+                        <div class="contacts__staff-photo">
+                            <img src="assets/images/staff-3.jpg" alt="">
+                        </div>
+                        <div class="contacts__staff-wrapper">
+                            <div class="contacts__staff-post">специалист</div>
+                            <div class="contacts__staff-name">малетина ольга александровна</div>
+                            <div class="contacts__staff-phone">
+                                <p>добавочный номер телефона (приемная)</p>
+                                <span>108</span>
+                            </div>
+                            <div class="contacts__staff-email">
+                                <p>электронная почта</p>
+                                <span>o.maletina@npssko.ru</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__staff-item">
+                        <div class="contacts__staff-photo">
+                            <img src="assets/images/staff-4.jpg" alt="">
+                        </div>
+                        <div class="contacts__staff-wrapper">
+                            <div class="contacts__staff-post">руководитель отдела проверок</div>
+                            <div class="contacts__staff-name">курганова елена геннадьевна</div>
+                            <div class="contacts__staff-phone">
+                                <p>добавочный номер телефона (приемная)</p>
+                                <span>110</span>
+                            </div>
+                            <div class="contacts__staff-email">
+                                <p>электронная почта</p>
+                                <span>e.kurganova@npssko.ru</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__staff-item">
+                        <div class="contacts__staff-photo">
+                            <img src="assets/images/staff-5.jpg" alt="">
+                        </div>
+                        <div class="contacts__staff-wrapper">
+                            <div class="contacts__staff-post">специалист отдела проверок</div>
+                            <div class="contacts__staff-name">лебедева светлана ивановна</div>
+                            <div class="contacts__staff-phone">
+                                <p>добавочный номер телефона (приемная)</p>
+                                <span>109</span>
+                            </div>
+                            <div class="contacts__staff-email">
+                                <p>электронная почта</p>
+                                <span>s.lebedeva@npssko.ru</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__staff-item">
+                        <div class="contacts__staff-photo">
+                            <img src="assets/images/staff-6.jpg" alt="">
+                        </div>
+                        <div class="contacts__staff-wrapper">
+                            <div class="contacts__staff-post">заместитель руководителя отдела проверок</div>
+                            <div class="contacts__staff-name">лисовик марина александровна</div>
+                            <div class="contacts__staff-phone">
+                                <p>добавочный номер телефона (приемная)</p>
+                                <span>110</span>
+                            </div>
+                            <div class="contacts__staff-email">
+                                <p>электронная почта</p>
+                                <span>m.lisovik@npssko.ru</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__staff-item">
+                        <div class="contacts__staff-photo">
+                            <img src="assets/images/staff-7.jpg" alt="">
+                        </div>
+                        <div class="contacts__staff-wrapper">
+                            <div class="contacts__staff-post">бухгалтер</div>
+                            <div class="contacts__staff-name">лунева юлия сергеевна</div>
+                            <div class="contacts__staff-phone">
+                                <p>добавочный номер телефона (приемная)</p>
+                                <span>105</span>
+                            </div>
+                            <div class="contacts__staff-email">
+                                <p>электронная почта</p>
+                                <span>buch1@npssko.ru</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__staff-item">
+                        <div class="contacts__staff-photo">
+                            <img src="assets/images/staff-8.jpg" alt="">
+                        </div>
+                        <div class="contacts__staff-wrapper">
+                            <div class="contacts__staff-post">специалист отдела проверок</div>
+                            <div class="contacts__staff-name">гришаточкина наталья николаевна</div>
+                            <div class="contacts__staff-phone">
+                                <p>добавочный номер телефона (приемная)</p>
+                                <span>107</span>
+                            </div>
+                            <div class="contacts__staff-email">
+                                <p>электронная почта</p>
+                                <span>n.grishatochkina@npssko.ru</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__staff-item">
+                        <div class="contacts__staff-photo">
+                            <img src="assets/images/staff-9.jpg" alt="">
+                        </div>
+                        <div class="contacts__staff-wrapper">
+                            <div class="contacts__staff-post">специалист отдела проверок</div>
+                            <div class="contacts__staff-name">зайченкова татьяна александровна</div>
+                            <div class="contacts__staff-phone">
+                                <p>добавочный номер телефона (приемная)</p>
+                                <span>зайченкова татьяна александровна</span>
+                            </div>
+                            <div class="contacts__staff-email">
+                                <p>электронная почта</p>
+                                <span>t.zaychenkova@npssko.ru</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__staff-item">
+                        <div class="contacts__staff-photo">
+                            <img src="assets/images/staff-10.jpg" alt="">
+                        </div>
+                        <div class="contacts__staff-wrapper">
+                            <div class="contacts__staff-post">ведущий специалист</div>
+                            <div class="contacts__staff-name">буришина дарья юрьевна</div>
+                            <div class="contacts__staff-phone">
+                                <p>добавочный номер телефона (приемная)</p>
+                                <span>111</span>
+                            </div>
+                            <div class="contacts__staff-email">
+                                <p>электронная почта</p>
+                                <span>d.burishina@npssko.ru</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-block="staff" class="contacts__staff-mobile-wrapper">
+                    <div class="contacts__staff"></div>
+                </div>
+                <a href="#" data-type="staff" class="contacts__show-more ">показать больше</a>
+                <div class="contacts__requisites">
+                    <h3>реквизиты специальных счетов</h3>
+                    <div class="contacts__requisites-grid">
+                        <div class="contacts__requisites-item main">
+                            <div class="contacts__requisites-item--row">
+                                <p>полное наименование организации</p>
+                                <span>Ассоциация Некоммерческое партнерство «Саморегулируемая организация «Строительный Союз Калининградской области»</span>
+                            </div>
+                            <div class="contacts__requisites-item--row">
+                                <p>юридический адрес</p>
+                                <span>Россия, 236022, г. Калининград, ул. Космонавта Пацаева, д. 6А, офис 1</span>
+                            </div>
+                            <div class="contacts__requisites-item--wrapper">
+                                <div class="contacts__requisites-item--col">
+                                    <p>телефон/факс</p>
+                                    <span>(8-4012) 97-31-31</span>
+                                </div>
+                                <div class="contacts__requisites-item--col">
+                                    <p>ИНН</p>
+                                    <span>3905090013</span>
+                                </div>
+                                <div class="contacts__requisites-item--col">
+                                    <p>КПП</p>
+                                    <span>390601001</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__requisites-grid">
+                        <div class="contacts__requisites-item">
+                            <div class="contacts__requisites-item--row">
+                                <p>специальный счет по ВВ (возмещения вреда)</p>
+                                <span>40703810732580000201</span>
+                            </div>
+                            <div class="contacts__requisites-item--row">
+                                <p>банк</p>
+                                <span>ФИЛИАЛ «САНКТ-ПЕТЕРБУРГСКИЙ» АО «АЛЬФА-БАНК» г. Санкт-Петербург</span>
+                            </div>
+                            <div class="contacts__requisites-item--wrapper">
+                                <div class="contacts__requisites-item--col">
+                                    <p>к/с</p>
+                                    <span>30101810600000000786</span>
+                                </div>
+                                <div class="contacts__requisites-item--col">
+                                    <p>БИК</p>
+                                    <span>044030786</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__requisites-item">
+                            <div class="contacts__requisites-item--row">
+                                <p>специальный счет по ВВ (возмещения вреда)</p>
+                                <span>40703810800620010255</span>
+                            </div>
+                            <div class="contacts__requisites-item--row">
+                                <p>банк</p>
+                                <span>АО «Банк ДОМ. РФ»</span>
+                            </div>
+                            <div class="contacts__requisites-item--wrapper">
+                                <div class="contacts__requisites-item--col">
+                                    <p>к/с</p>
+                                    <span>30101810345250000266</span>
+                                </div>
+                                <div class="contacts__requisites-item--col">
+                                    <p>БИК</p>
+                                    <span>044525266</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__requisites-item">
+                            <div class="contacts__requisites-item--row">
+                                <p>специальный счет по ВВ (возмещения вреда)</p>
+                                <span>40703810906000001215</span>
+                            </div>
+                            <div class="contacts__requisites-item--row">
+                                <p>банк</p>
+                                <span>Санкт-Петербургский Филиал ПАО "ПРОМСВЯЗЬБАНК", г. Санкт-Петербург</span>
+                            </div>
+                            <div class="contacts__requisites-item--wrapper">
+                                <div class="contacts__requisites-item--col">
+                                    <p>к/с</p>
+                                    <span>30101810000000000920</span>
+                                </div>
+                                <div class="contacts__requisites-item--col">
+                                    <p>БИК</p>
+                                    <span>044030920</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__requisites-item">
+                            <div class="contacts__requisites-item--row">
+                                <p>специальный счет по ВВ (возмещения вреда)</p>
+                                <span>40703810277000000059</span>
+                            </div>
+                            <div class="contacts__requisites-item--row">
+                                <p>банк</p>
+                                <span>Ф.ОПЕРА БАНКА ВТБ (ПАО) в САНКТ-ПЕТРЕБУРГЕ</span>
+                            </div>
+                            <div class="contacts__requisites-item--wrapper">
+                                <div class="contacts__requisites-item--col">
+                                    <p>к/с</p>
+                                    <span>30101810200000000704</span>
+                                </div>
+                                <div class="contacts__requisites-item--col">
+                                    <p>БИК</p>
+                                    <span>044030704</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__requisites-item">
+                            <div class="contacts__requisites-item--row">
+                                <p>специальный счет по ВВ (возмещения вреда)</p>
+                                <span>40703810555000000238</span>
+                            </div>
+                            <div class="contacts__requisites-item--row">
+                                <p>банк</p>
+                                <span>Калининградский РФ АО "РОССЕЛЬХОЗБАНК", г. Калининград</span>
+                            </div>
+                            <div class="contacts__requisites-item--wrapper">
+                                <div class="contacts__requisites-item--col">
+                                    <p>к/с</p>
+                                    <span>30101810500000000878</span>
+                                </div>
+                                <div class="contacts__requisites-item--col">
+                                    <p>БИК</p>
+                                    <span>042748878</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__requisites-grid">
+                        <div class="contacts__requisites-item">
+                            <div class="contacts__requisites-item--row">
+                                <p>специальный счет по ОДО (обеспечения договорных обязательств)</p>
+                                <span>40703810432580000200</span>
+                            </div>
+                            <div class="contacts__requisites-item--row">
+                                <p>банк</p>
+                                <span>ФИЛИАЛ «САНКТ-ПЕТЕРБУРГСКИЙ» АО «АЛЬФА-БАНК» г. Санкт-Петербург</span>
+                            </div>
+                            <div class="contacts__requisites-item--wrapper">
+                                <div class="contacts__requisites-item--col">
+                                    <p>к/с</p>
+                                    <span>30101810600000000786</span>
+                                </div>
+                                <div class="contacts__requisites-item--col">
+                                    <p>БИК</p>
+                                    <span>044030786</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__requisites-item">
+                            <div class="contacts__requisites-item--row">
+                                <p>специальный счет по ОДО (обеспечения договорных обязательств)</p>
+                                <span>40703810900620020255</span>
+                            </div>
+                            <div class="contacts__requisites-item--row">
+                                <p>банк</p>
+                                <span>АО «Банк ДОМ. РФ»</span>
+                            </div>
+                            <div class="contacts__requisites-item--wrapper">
+                                <div class="contacts__requisites-item--col">
+                                    <p>к/с</p>
+                                    <span>30101810345250000266</span>
+                                </div>
+                                <div class="contacts__requisites-item--col">
+                                    <p>БИК</p>
+                                    <span>044525266</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__requisites-item">
+                            <div class="contacts__requisites-item--row">
+                                <p>специальный счет по ОДО (обеспечения договорных обязательств)</p>
+                                <span>40703810606000001214</span>
+                            </div>
+                            <div class="contacts__requisites-item--row">
+                                <p>банк</p>
+                                <span>Санкт-Петербургский Филиал ПАО "ПРОМСВЯЗЬБАНК", г. Санкт-Петербург</span>
+                            </div>
+                            <div class="contacts__requisites-item--wrapper">
+                                <div class="contacts__requisites-item--col">
+                                    <p>к/с</p>
+                                    <span>30101810000000000920</span>
+                                </div>
+                                <div class="contacts__requisites-item--col">
+                                    <p>БИК</p>
+                                    <span>044030920</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__requisites-item">
+                            <div class="contacts__requisites-item--row">
+                                <p>специальный счет по ОДО (обеспечения договорных обязательств)</p>
+                                <span>40703810677000000060</span>
+                            </div>
+                            <div class="contacts__requisites-item--row">
+                                <p>банк</p>
+                                <span>Ф.ОПЕРА БАНКА ВТБ (ПАО) в САНКТ-ПЕТРЕБУРГЕ</span>
+                            </div>
+                            <div class="contacts__requisites-item--wrapper">
+                                <div class="contacts__requisites-item--col">
+                                    <p>к/с</p>
+                                    <span>30101810200000000704</span>
+                                </div>
+                                <div class="contacts__requisites-item--col">
+                                    <p>БИК</p>
+                                    <span>044030704</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__requisites-item">
+                            <div class="contacts__requisites-item--row">
+                                <p>специальный счет по ОДО (обеспечения договорных обязательств)</p>
+                                <span>40703810055000000246</span>
+                            </div>
+                            <div class="contacts__requisites-item--row">
+                                <p>банк</p>
+                                <span>Калининградский РФ АО "РОССЕЛЬХОЗБАНК", г. Калининград</span>
+                            </div>
+                            <div class="contacts__requisites-item--wrapper">
+                                <div class="contacts__requisites-item--col">
+                                    <p>ИНН</p>
+                                    <span>7725114488</span>
+                                </div>
+                                <div class="contacts__requisites-item--col">
+                                    <p>КПП</p>
+                                    <span>390643002</span>
+                                </div>
+                            </div>
+                            <div class="contacts__requisites-item--wrapper">
+                                <div class="contacts__requisites-item--col">
+                                    <p>к/с</p>
+                                    <span>30101810500000000878</span>
+                                </div>
+                                <div class="contacts__requisites-item--col">
+                                    <p>БИК</p>
+                                    <span>042748878</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-block="requisites" class="contacts__requisites-mobile-wrapper">
+                    <div class="contacts__requisites-grid"></div>
+                </div>
+                <a data-type="requisites" href="#" class="contacts__show-more">показать больше</a>
+            </div>
+        </section>
+    </main>
+    <div class="mobile-menu">
+        <div class="sidebar-menu">
+            <ul class="first-level">
+                <li>
+                    <a href="">об ассоцации</a>
+                    <div class="second-level-wrapper">
+                        <ul class="second-level">
+                            <li>
+                                <a href="">структура</a>
+                            </li>
+                            <li>
+                                <a href="">органы СРО</a>
+                            </li>
+                            <li>
+                                <a href="">членство СРО</a>
+                            </li>
+                            <li>
+                                <a href="">реквизиты специальных счетов</a>
+                            </li>
+                            <li>
+                                <a href="">контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">документы</a>
+                    <div class="second-level-wrapper">
+                        <ul class="second-level">
+                            <li>
+                                <a href="">раздел 2 уровня</a>
+                            </li>
+                            <li>
+                                <a href="">раздел 2 уровня</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href=""">членство СРО</a>
+                    <div class="second-level-wrapper">
+                        <ul class="second-level">
+                            <li>
+                                <a href="">раздел 2 уровня</a>
+                            </li>
+                            <li>
+                                <a href="">раздел 2 уровня</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">контроль</a>
+                    <div class="second-level-wrapper">
+                        <ul class="second-level">
+                            <li>
+                                <a href="">исходящие</a>
+                            </li>
+                            <li>
+                                <a href="">входящие</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">ответственность</a>
+                    <div class="second-level-wrapper">
+                        <ul class="second-level">
+                            <li>
+                                <a href="">исходящие</a>
+                            </li>
+                            <li>
+                                <a href="">входящие</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">информация</a>
+                    <div class="second-level-wrapper">
+                        <ul class="second-level">
+                            <li>
+                                <a href="">раздел 2 уровня</a>
+                            </li>
+                            <li>
+                                <a href="">раздел 2 уровня</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">поддержка</a>
+                    <div class="second-level-wrapper">
+                        <ul class="second-level">
+                            <li>
+                                <a href="">раздел 2 уровня</a>
+                            </li>
+                            <li>
+                                <a href="">раздел 2 уровня</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="link">личный кабинет</a>
+                </li>
+                <li>
+                    <a href="" class="link">карта сайта</a>
+                </li>
+                <li>
+                    <a href="" class="link">поиск</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile__socials">
+            <a href=""><img src="assets/images/Vk.svg" alt=""></a>
+            <a href=""><img src="assets/images/Telegram.svg" alt=""></a>
+            <a href=""><img src="assets/images/Whatsapp.svg" alt=""></a>
+        </div>
+        <a href="tel:+7 (4012) 97-31-31" class="mobile__phone">+7 (4012) 97-31-31</a>
+        <a href="mailto: pochta@mail.ru" class="mobile__email">pochta@mail.ru</a>
+        <a href="#" class="btn bg">вступиь в СРО</a>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__col">
+                    <div class="footer__col-wrapper">
+                        <a href="/" class="footer__logo">
+                            <img src="assets/images/footer-logo.png" alt="">
+                        </a>
+                        <a href="tel:+7 (4012) 97-31-31" class="footer__number">+7 (4012) 97-31-31</a>
+                        <a href="mailto: pochta@mail.ru" class="footer__email">pochta@mail.ru</a>
+                        <div class="footer__socials">
+                            <a href=""><img src="assets/images/Vk.svg" alt=""></a>
+                            <a href=""><img src="assets/images/Telegram.svg" alt=""></a>
+                            <a href=""><img src="assets/images/Whatsapp.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <a href="#" class="footer__policy">политика обработки персональных данных</a>
+                </div>
+                <div class="footer__menu">
+                    <div class="footer__section">
+                        <div class="footer__section-row">
+                            <a href="#" class="footer__section-name">об ассоциации</a>
+                            <a href="#" class="footer__section-btn"></a>
+                        </div>
+                        <div class="footer__section-list">
+                            <div class="footer__section-inner">
+                                <a href="#" class="footer__section-link">структура</a>
+                                <a href="#" class="footer__section-link">органы СРО</a>
+                                <a href="#" class="footer__section-link">членство СРО</a>
+                                <a href="#" class="footer__section-link">реквизиты специальных счетов</a>
+                                <a href="#" class="footer__section-link">контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__section-row">
+                            <a href="#" class="footer__section-name">документы</a>
+                            <a href="#" class="footer__section-btn"></a>
+                        </div>
+                        <div class="footer__section-list">
+                            <div class="footer__section-inner">
+                                <a href="#" class="footer__section-link">документы СРО</a>
+                                <a href="#" class="footer__section-link">федеральное законодательство</a>
+                                <a href="#" class="footer__section-link">официальные разъяснения</a>
+                                <a href="#" class="footer__section-link">в помощь членам СРО</a>
+                                <a href="#" class="footer__section-link">отчетность СРО</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__section-row">
+                            <a href="#" class="footer__section-name">членство в СРО</a>
+                            <a href="#" class="footer__section-btn"></a>
+                        </div>
+                        <div class="footer__section-list">
+                            <div class="footer__section-inner">
+                                <a href="#" class="footer__section-link">реестр членов СРО</a>
+                                <a href="#" class="footer__section-link">вступление в СРО</a>
+                                <a href="#" class="footer__section-link">изменение сведений в реестре о члене СРО</a>
+                                <a href="#" class="footer__section-link">получение выписки из реестра членов СРО</a>
+                                <a href="#" class="footer__section-link">размеры вступительного и членских взносов</a>
+                                <a href="#" class="footer__section-link">порядок оплаты взносов</a>
+                                <a href="#" class="footer__section-link">прекращение членства в СРО</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__section-row">
+                            <a href="#" class="footer__section-name">контроль</a>
+                            <a href="#" class="footer__section-btn"></a>
+                        </div>
+                        <div class="footer__section-list">
+                            <div class="footer__section-inner">
+                                <a href="#" class="footer__section-link">порядок проведения проверок</a>
+                                <a href="#" class="footer__section-link">меры дисциплинарного воздействия</a>
+                                <a href="#" class="footer__section-link">планы контрольных проверок</a>
+                                <a href="#" class="footer__section-link">результаты контрольных проверок</a>
+                                <a href="#" class="footer__section-link">привлечение к отвественности</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__section-row">
+                            <a href="#" class="footer__section-name">ответственность</a>
+                            <a href="#" class="footer__section-btn"></a>
+                        </div>
+                        <div class="footer__section-list">
+                            <div class="footer__section-inner">
+                                <a href="#" class="footer__section-link">размер компенсационного фонда</a>
+                                <a href="#" class="footer__section-link">перечень выплат из компенсационного фонда</a>
+                                <a href="#" class="footer__section-link">страхование гражданской ответственности</a>
+                                <a href="#" class="footer__section-link">страхование ответственности за неисполнение обязательств по договорам</a>
+                                <a href="#" class="footer__section-link">информация о договорах страхования</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__section-row">
+                            <a href="#" class="footer__section-name">информация</a>
+                            <a href="#" class="footer__section-btn"></a>
+                        </div>
+                        <div class="footer__section-list">
+                            <div class="footer__section-inner">
+                                <a href="#" class="footer__section-link">о контролирующих органах за СРО</a>
+                                <a href="#" class="footer__section-link">о данных СРО в Госреестре</a>
+                                <a href="#" class="footer__section-link">о членстве СРО в некоммерческих организациях (НОСТРОЙ и Союз строителей)</a>
+                                <a href="#" class="footer__section-link">об исках, заявлениях в суды</a>
+                                <a href="#" class="footer__section-link">аналитика</a>
+                                <a href="#" class="footer__section-link">новости</a>
+                                <a href="#" class="footer__section-link">наши партнеры</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__section-row">
+                                <a href="#" class="footer__section-name">поддержка</a>
+                                <a href="#" class="footer__section-btn"></a>
+                        </div>
+                        <div class="footer__section-list">
+                            <div class="footer__section-inner">
+                                <a href="#" class="footer__section-link">электронная подпись</a>
+                                <a href="#" class="footer__section-link">помощь по личным кабинетам</a>
+                                <a href="#" class="footer__section-link">заявление о прекращении членства</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <a href="#" class="footer__section-name">личный кабинет</a>
+                    </div>
+                    <div class="footer__section">
+                        <a href="#" class="footer__section-name">карта сайта</a>
+                    </div>
+                </div>
+                <a href="#" class="footer__policy mobile">политика обработки персональных данных</a>
+            </div>
+        </div>
+    </footer>
+    <script>	
+        function init() {
+            var cord = [54.725821, 20.479927]
+            var myMap = new ymaps.Map("contacts__map", {
+                center: [54.725821, 20.479927],
+                zoom: 18
+            });
+
+            var placemark = new ymaps.Placemark([54.725821, 20.479927],{
+                hintContent: 'Калининград, ул. Космонавта Пацаева, д. 6А, офис 1',
+                balloonContent: 'Калининград, ул. Космонавта Пацаева, д. 6А, офис 1'
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: 'assets/images/ymap-mark.svg',
+                iconImageSize: [35, 40],
+                iconImageOffset: [-19, -36],
+
+            }) 
+
+            myMap.hint.open(myMap.getCenter(),'Калининград, ул. Космонавта Пацаева, <br> д. 6А, офис 1');
+            myMap.behaviors.disable('scrollZoom');
+            myMap.geoObjects.add(placemark);
+        }
+
+        ymaps.ready(init);
+    </script> 
+    <script src="assets/js/libs/jquery.js"></script>
+    <script src="assets/js/libs/swiper.js"></script>
+    <script src="assets/js/libs/inputmask.min.js"></script>
+    <script src="assets/js/libs/aos.js"></script>
+    <script src="assets/js/libs/select2.js"></script>
+    <script src="assets/js/libs/simplebar.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+</body>
+</html>

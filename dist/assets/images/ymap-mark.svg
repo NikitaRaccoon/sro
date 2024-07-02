@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<svg width="60" height="68" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <path d="m23.51,51.52a0.5,0.5 0 0 1 -0.5,0.48c-0.29,0 -0.51,-0.21 -0.52,-0.48c-0.14,-3.16 -1.76,-5.21 -4.83,-6.14c-10.13,-2.41 -17.66,-11.52 -17.66,-22.38c0,-12.7 10.3,-23 23,-23s23,10.3 23,23c0,10.86 -7.53,19.97 -17.66,22.38c-3.07,0.93 -4.69,2.98 -4.83,6.14z" id="ae96eeecd750ec2a83543f00c9bc789d__b"/>
+  <filter filterUnits="objectBoundingBox" height="138.5%" id="ae96eeecd750ec2a83543f00c9bc789d__a" width="143.5%" x="-21.7%" y="-15.4%">
+   <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+   <feOffset dy="2"/>
+  </filter>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g fill="none" fill-rule="evenodd" id="svg_1">
+   <g fill="#f43" fill-rule="nonzero" id="svg_2" transform="translate(7 5)">
+    <use filter="url(#ae96eeecd750ec2a83543f00c9bc789d__a)" id="svg_3" xlink:href="#ae96eeecd750ec2a83543f00c9bc789d__b"/>
+    <use id="svg_4" xlink:href="#ae96eeecd750ec2a83543f00c9bc789d__b"/>
+   </g>
+   <path d="m30,68c-2.21,0 -4,-1.79 -4,-4s1.79,-4 4,-4s4,1.79 4,4s-1.79,4 -4,4z" fill="#fff" fill-rule="nonzero" id="svg_5"/>
+   <path clip-rule="evenodd" d="m28.38,33.7l0,4.8l11.4,0a0.6,0.6 0 0 0 0.6,-0.6l0,-13.8a0.6,0.6 0 0 0 -0.6,-0.6l-4.95,0l-0.16,2l3.71,0l0,1l-3.79,0l-0.16,2l3.95,0l0,1l-4.03,0l-0.37,4.71a0.3,0.3 0 0 1 -0.32,0.29a0.31,0.31 0 0 1 -0.28,-0.31l0,-16.29a0.4,0.4 0 0 0 -0.4,-0.4l-0.6,0l0,-0.6a0.4,0.4 0 0 0 -0.4,-0.4l-10.2,0a0.4,0.4 0 0 0 -0.4,0.4l0,0.6l-0.6,0a0.4,0.4 0 0 0 -0.4,0.4l0,20a0.6,0.6 0 0 0 0.6,0.6l4.4,0l0,-4.8c0,-0.11 0.09,-0.2 0.2,-0.2l2.6,0c0.11,0 0.2,0.09 0.2,0.2zm-4.5,-3.2l0,-6l2,0l0,6l-2,0zm4,-6l0,6l2,0l0,-6l-2,0zm-4,-2l0,-3l2,0l0,3l-2,0zm4,-3l0,3l2,0l0,-3l-2,0zm7.5,13l0,-1l3,0l0,1l-3,0z" fill="#ffffff" fill-rule="evenodd" id="svg_6"/>
+   <path d="m30,66a2,2 0 1 0 0,-4a2,2 0 0 0 0,4z" fill="#f43" id="svg_7"/>
+  </g>
+ </g>
+</svg>

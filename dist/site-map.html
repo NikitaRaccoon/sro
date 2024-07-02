@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/select2.css">
+    <link rel="stylesheet" href="assets/css/simplebar.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=41fdbd90-4dd8-4661-987f-5ad6859ef9f2&lang=ru_RU" type="text/javascript"></script>
+    <title>СРО ССКО</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="/" class="header__logo">
+                <img src="assets/images/new-logo2.png" alt="">         
+            </a>
+            <div class="header__wrapper">
+                <nav class="header__nav">
+                    <a href="">об ассоциации</a>
+                    <a href="">документы</a>
+                    <a href="">контроль</a>
+                    <a href="">ответственность</a>
+                    <a href="">информация</a>
+                </nav>
+                <div class="header__search">
+                    <input type="text" placeholder="найти">
+                    <a href="#" class="header__search-btn">
+                        <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path id="Vector" d="M11.5 2C6.25 2 2 6.25 2 11.5C2 16.74 6.25 21 11.5 21C16.74 21 21 16.74 21 11.5C21 6.25 16.74 2 11.5 2ZM18.5 18.5L22 22" stroke="#27A193" stroke-opacity="1.000000" stroke-width="3.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                        </svg>   
+                        <span>поиск</span>
+                    </a>
+                </div>
+                <div class="header__account">
+                    <a href="#" class="">
+                        <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <clipPath id="clip244_3057">
+                                <rect id="icon/user" width="24.000000" height="24.000000" fill="rgb(39, 161, 147)" fill-opacity="0"/>
+                            </clipPath>
+                        </defs>
+                        <g clip-path="url(#clip244_3057)">
+                            <path id="combo shape" d="M12 11C14.2092 11 16 9.20911 16 7C16 4.79089 14.2092 3 12 3C9.79077 3 8 4.79089 8 7C8 9.20911 9.79077 11 12 11ZM12 21C15.866 21 19 19.2091 19 17C19 14.7909 15.866 13 12 13C8.13403 13 5 14.7909 5 17C5 19.2091 8.13403 21 12 21Z" clip-rule="evenodd" fill="rgb(39, 161, 147)" fill-opacity="0.900000" fill-rule="evenodd"/>
+                        </g>
+                    </svg>
+                        <span>личный кабинет</span>
+                    </a>
+                </div>
+                <a href="#" class="header__burger">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="breadcrumbs">
+        <a href="#">пункт меню /</a> 
+        <a href="#">пункт меню /</a>  
+        <a href="#">пункт меню /</a>  
+        <a href="#">пункт меню /</a>  
+        <a href="" class="current-page">пункт меню</a> 
+    </div>
+    <main>
+        <section class="site-map">
+            <div class="container">
+                <h2>карта сайта</h2>
+                <div class="site-map__list">
+                    <div class="site-map__col">
+                        <ul class="site-map__first-level">
+                            <li><a href="#">главная</a></li>
+                            <li><a href="#">об ассоциации</a>
+                                <ul class="site-map__second-level">
+                                    <li>
+                                        <a href="#">органы СРО</a>
+                                        <ul class="site-map__third-level">
+                                            <li><a href="#">структура</a></li>
+                                            <li><a href="#">общее собрание членов СРО</a></li>
+                                            <li><a href="#">коллегиальный орган управления СРО</a></li>
+                                            <li><a href="#">исполнительный орган СРО</a></li>
+                                            <li><a href="#">орган СРО по контролю</a></li>
+                                            <li><a href="#">дисциплинарный орган СРО</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">реквизиты специальных счетов</a></li>
+                                    <li>
+                                        <ul class="site-map__third-level">
+                                            <li><a href="#">сотрудники</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">документы</a>
+                                <ul class="site-map__second-level">
+                                    <li>
+                                        <a href="#">документы СРО</a>
+                                        <ul class="site-map__third-level">
+                                            <li><a href="#">устав АНП СРО ССКО</a></li>
+                                            <li>
+                                                <a href="#">положения АНП СРО ССКО</a>
+                                                <ul class="site-map__fourth-level">
+                                                    <li><a href="#">порядок проведения проверок - положение о контроле</a></li>
+                                                    <li><a href="#">порядок обеспечения ответственности - положение о КФ</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">стандарты СРО</a></li>
+                                            <li><a href="#">проекты документов</a></li>
+                                            <li><a href="#">документы Общего собрания членов СРО</a></li>
+                                            <li><a href="#">документы Коллегиального органа управления СРО</a></li>
+                                        </ul>
+                                        <li><a href="#">федеральное законодательство</a></li>
+                                        <li><a href="#">официальные разъяснения</a></li>
+                                        <li><a href="#">в помощь членам СРО — информация о необходиммых требованиях к участникам рынка</a></li>
+                                        <li>
+                                            <a href="#">отчётность СРО</a>
+                                            <ul class="site-map__third-level">
+                                                <li><a href="#">годовая бухгалтерская отчетность по годам</a></li>
+                                                <li><a href="#">аудиторские заключения по годам</a></li>
+                                                <li><a href="#">специальная оценка охраны труда</a></li>
+                                            </ul>
+                                        </li>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">членство</a>
+                                <ul class="site-map__second-level">
+                                    <li>
+                                        <a href="#">реестр членов СРО</a>
+                                        <ul class="site-map__third-level">
+                                            <li><a href="#">получение выписки из реестра</a></li>
+                                            <li><a href="#">поиск информации о членах СРО по их реквизитам</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">вступление в СРО</a></li>
+                                    <li><a href="#">изменение сведений в реестре о члене СРО</a></li>
+                                    <li><a href="#">получение выписки из реестра членов СРО</a></li>
+                                    <li><a href="#">размеры вступительного и членских взносов</a></li>
+                                    <li><a href="#">порядок оплаты взносов</a></li>
+                                    <li><a href="#">прекращение членства в СРО</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="site-map__col">
+                        <ul class="site-map__first-level">
+                            <li><a href="#">контроль</a>
+                                <ul class="site-map__second-level">
+                                    <li><a href="#">информация о мерах дисциплинарного воздействия</a></li>
+                                    <li><a href="#">планы проверок</a></li>
+                                    <li><a href="#">результаты проверок</a></li>
+                                    <li><a href="#">протоколы заседаний дисциплинарного органа</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">обеспечение ответственности</a>
+                                <ul class="site-map__second-level">
+                                    <li><a href="#">размер компенсационного фонда</a></li>
+                                    <li><a href="#">перечень выплат из компенсационного фонда</a></li>
+                                    <li><a href="#">страхование гражданской ответственности</a></li>
+                                    <li>
+                                        <a href="#">страхование ответственности за неисполнение обязательств по договорам</a>
+                                        <ul class="site-map__third-level">
+                                            <li><a href="#">сообщаем, что пока отменено</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">информация о договорах страхования</a>
+                                        <ul class="site-map__third-level">
+                                            <li><a href="#">сообщаем, что пока отменено</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">информация</a>
+                                <ul class="site-map__second-level">
+                                    <li><a href="#">новости</a></li>
+                                    <li><a href="#">о контролирующих органах за СРО</a></li>
+                                    <li><a href="#">о данных СРО в Госреестре</a></li>
+                                    <li><a href="#">о членстве СРО в некоммерческих организациях (НОСТРОЙ и Союз строителей)</a></li>
+                                    <li><a href="#">об исках, заявлениях в суды</a></li>
+                                    <li><a href="#">аналитика</a></li>
+                                    <li><a href="#">наши партнеры</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">личный кабинет</a></li>
+                            <li><a href="#">поддержка</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="mobile-menu">
+        <div class="sidebar-menu">
+            <ul class="first-level">
+                <li>
+                    <a href="">об ассоцации</a>
+                    <div class="second-level-wrapper">
+                        <ul class="second-level">
+                            <li>
+                                <a href="">структура</a>
+                            </li>
+                            <li>
+                                <a href="">органы СРО</a>
+                            </li>
+                            <li>
+                                <a href="">членство СРО</a>
+                            </li>
+                            <li>
+                                <a href="">реквизиты специальных счетов</a>
+                            </li>
+                            <li>
+                                <a href="">контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">документы</a>
+                    <div class="second-level-wrapper">
+                        <ul class="second-level">
+                            <li>
+                                <a href="">раздел 2 уровня</a>
+                            </li>
+                            <li>
+                                <a href="">раздел 2 уровня</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href=""">членство СРО</a>
+                    <div class="second-level-wrapper">
+                        <ul class="second-level">
+                            <li>
+                                <a href="">раздел 2 уровня</a>
+                            </li>
+                            <li>
+                                <a href="">раздел 2 уровня</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">контроль</a>
+                    <div class="second-level-wrapper">
+                        <ul class="second-level">
+                            <li>
+                                <a href="">исходящие</a>
+                            </li>
+                            <li>
+                                <a href="">входящие</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">ответственность</a>
+                    <div class="second-level-wrapper">
+                        <ul class="second-level">
+                            <li>
+                                <a href="">исходящие</a>
+                            </li>
+                            <li>
+                                <a href="">входящие</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">информация</a>
+                    <div class="second-level-wrapper">
+                        <ul class="second-level">
+                            <li>
+                                <a href="">раздел 2 уровня</a>
+                            </li>
+                            <li>
+                                <a href="">раздел 2 уровня</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">поддержка</a>
+                    <div class="second-level-wrapper">
+                        <ul class="second-level">
+                            <li>
+                                <a href="">раздел 2 уровня</a>
+                            </li>
+                            <li>
+                                <a href="">раздел 2 уровня</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="link">личный кабинет</a>
+                </li>
+                <li>
+                    <a href="" class="link">карта сайта</a>
+                </li>
+                <li>
+                    <a href="" class="link">поиск</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile__socials">
+            <a href=""><img src="assets/images/Vk.svg" alt=""></a>
+            <a href=""><img src="assets/images/Telegram.svg" alt=""></a>
+            <a href=""><img src="assets/images/Whatsapp.svg" alt=""></a>
+        </div>
+        <a href="tel:+7 (4012) 97-31-31" class="mobile__phone">+7 (4012) 97-31-31</a>
+        <a href="mailto: pochta@mail.ru" class="mobile__email">pochta@mail.ru</a>
+        <a href="#" class="btn bg">вступиь в СРО</a>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__col">
+                    <div class="footer__col-wrapper">
+                        <a href="/" class="footer__logo">
+                            <img src="assets/images/footer-logo.png" alt="">
+                        </a>
+                        <a href="tel:+7 (4012) 97-31-31" class="footer__number">+7 (4012) 97-31-31</a>
+                        <a href="mailto: pochta@mail.ru" class="footer__email">pochta@mail.ru</a>
+                        <div class="footer__socials">
+                            <a href=""><img src="assets/images/Vk.svg" alt=""></a>
+                            <a href=""><img src="assets/images/Telegram.svg" alt=""></a>
+                            <a href=""><img src="assets/images/Whatsapp.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <a href="#" class="footer__policy">политика обработки персональных данных</a>
+                </div>
+                <div class="footer__menu">
+                    <div class="footer__section">
+                        <div class="footer__section-row">
+                            <a href="#" class="footer__section-name">об ассоциации</a>
+                            <a href="#" class="footer__section-btn"></a>
+                        </div>
+                        <div class="footer__section-list">
+                            <div class="footer__section-inner">
+                                <a href="#" class="footer__section-link">структура</a>
+                                <a href="#" class="footer__section-link">органы СРО</a>
+                                <a href="#" class="footer__section-link">членство СРО</a>
+                                <a href="#" class="footer__section-link">реквизиты специальных счетов</a>
+                                <a href="#" class="footer__section-link">контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__section-row">
+                            <a href="#" class="footer__section-name">документы</a>
+                            <a href="#" class="footer__section-btn"></a>
+                        </div>
+                        <div class="footer__section-list">
+                            <div class="footer__section-inner">
+                                <a href="#" class="footer__section-link">документы СРО</a>
+                                <a href="#" class="footer__section-link">федеральное законодательство</a>
+                                <a href="#" class="footer__section-link">официальные разъяснения</a>
+                                <a href="#" class="footer__section-link">в помощь членам СРО</a>
+                                <a href="#" class="footer__section-link">отчетность СРО</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__section-row">
+                            <a href="#" class="footer__section-name">членство в СРО</a>
+                            <a href="#" class="footer__section-btn"></a>
+                        </div>
+                        <div class="footer__section-list">
+                            <div class="footer__section-inner">
+                                <a href="#" class="footer__section-link">реестр членов СРО</a>
+                                <a href="#" class="footer__section-link">вступление в СРО</a>
+                                <a href="#" class="footer__section-link">изменение сведений в реестре о члене СРО</a>
+                                <a href="#" class="footer__section-link">получение выписки из реестра членов СРО</a>
+                                <a href="#" class="footer__section-link">размеры вступительного и членских взносов</a>
+                                <a href="#" class="footer__section-link">порядок оплаты взносов</a>
+                                <a href="#" class="footer__section-link">прекращение членства в СРО</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__section-row">
+                            <a href="#" class="footer__section-name">контроль</a>
+                            <a href="#" class="footer__section-btn"></a>
+                        </div>
+                        <div class="footer__section-list">
+                            <div class="footer__section-inner">
+                                <a href="#" class="footer__section-link">порядок проведения проверок</a>
+                                <a href="#" class="footer__section-link">меры дисциплинарного воздействия</a>
+                                <a href="#" class="footer__section-link">планы контрольных проверок</a>
+                                <a href="#" class="footer__section-link">результаты контрольных проверок</a>
+                                <a href="#" class="footer__section-link">привлечение к отвественности</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__section-row">
+                            <a href="#" class="footer__section-name">ответственность</a>
+                            <a href="#" class="footer__section-btn"></a>
+                        </div>
+                        <div class="footer__section-list">
+                            <div class="footer__section-inner">
+                                <a href="#" class="footer__section-link">размер компенсационного фонда</a>
+                                <a href="#" class="footer__section-link">перечень выплат из компенсационного фонда</a>
+                                <a href="#" class="footer__section-link">страхование гражданской ответственности</a>
+                                <a href="#" class="footer__section-link">страхование ответственности за неисполнение обязательств по договорам</a>
+                                <a href="#" class="footer__section-link">информация о договорах страхования</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__section-row">
+                            <a href="#" class="footer__section-name">информация</a>
+                            <a href="#" class="footer__section-btn"></a>
+                        </div>
+                        <div class="footer__section-list">
+                            <div class="footer__section-inner">
+                                <a href="#" class="footer__section-link">о контролирующих органах за СРО</a>
+                                <a href="#" class="footer__section-link">о данных СРО в Госреестре</a>
+                                <a href="#" class="footer__section-link">о членстве СРО в некоммерческих организациях (НОСТРОЙ и Союз строителей)</a>
+                                <a href="#" class="footer__section-link">об исках, заявлениях в суды</a>
+                                <a href="#" class="footer__section-link">аналитика</a>
+                                <a href="#" class="footer__section-link">новости</a>
+                                <a href="#" class="footer__section-link">наши партнеры</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__section-row">
+                                <a href="#" class="footer__section-name">поддержка</a>
+                                <a href="#" class="footer__section-btn"></a>
+                        </div>
+                        <div class="footer__section-list">
+                            <div class="footer__section-inner">
+                                <a href="#" class="footer__section-link">электронная подпись</a>
+                                <a href="#" class="footer__section-link">помощь по личным кабинетам</a>
+                                <a href="#" class="footer__section-link">заявление о прекращении членства</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <a href="#" class="footer__section-name">личный кабинет</a>
+                    </div>
+                    <div class="footer__section">
+                        <a href="#" class="footer__section-name">карта сайта</a>
+                    </div>
+                </div>
+                <a href="#" class="footer__policy mobile">политика обработки персональных данных</a>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/libs/jquery.js"></script>
+    <script src="assets/js/libs/swiper.js"></script>
+    <script src="assets/js/libs/inputmask.min.js"></script>
+    <script src="assets/js/libs/aos.js"></script>
+    <script src="assets/js/libs/select2.js"></script>
+    <script src="assets/js/libs/simplebar.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+</body>
+</html>

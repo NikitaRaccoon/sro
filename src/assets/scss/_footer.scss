@@ -1,0 +1,239 @@
+.footer {
+
+    background-color: $background1;
+
+    &__wrapper {
+        padding: 4rem 0;
+        display: flex;
+        gap: 13.2rem;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 0 0 30rem;
+    }
+
+    &__col-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__logo {
+
+        width: 18.2rem;
+        margin-bottom: 6.4rem;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    &__number {
+        font-size: 3.2rem;
+        font-weight: 600;
+        line-height: 140%;
+        margin-bottom: 1.2rem;
+        transition: .3s;
+        color: $font1;
+
+        &:hover {
+            color: $color1;
+        }
+    }
+
+    &__email {
+        font-size: 3.2rem;
+        font-weight: 600;
+        line-height: 140%;
+        margin-bottom: 6.4rem;
+        transition: .3s;
+        color: $font1;
+
+        &:hover {
+            color: $color1;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        gap: 2rem;
+
+        img {
+            height: 2.4rem;
+            width: auto;
+        }
+    }
+
+    &__policy {
+        font-size: 1.4rem;
+        line-height: 160%;
+        color: $font2;
+
+        &.mobile {
+            display: none;
+        }
+    }
+
+    &__menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 4rem;
+        column-gap: 2.4rem;
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    &__section-name {
+        color: $font1;
+        font-size: 3.2rem;
+        font-weight: 600;
+        line-height: 140%;
+    }
+
+    &__section-btn {
+        display: none;
+    }
+
+    &__section-inner {
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+    }
+
+    &__section-link {
+        color: $font2;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 140%;
+        transition: .3s;
+
+        &:hover {
+            color: $color1;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .footer {
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        &__col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 0 0 30rem;
+        }
+
+        &__col-wrapper {
+            align-items: center;
+        }
+
+        &__menu {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer {
+
+        &__wrapper {
+            gap: 2.4rem;
+            align-items: flex-start;
+        }
+
+        &__col {
+            flex: none;
+        }
+
+        &__col-wrapper {
+            align-items: flex-start;
+        }
+
+        &__logo {
+
+            width: 12rem;
+            margin-bottom: 2.4rem;
+        }
+
+        &__email {
+            margin-bottom: 2.4rem;
+        }
+
+        &__socials {
+            display: flex;
+            gap: 2rem;
+
+            img {
+                height: 2.4rem;
+                width: auto;
+            }
+        }
+
+        &__policy {
+            display: none;
+
+            &.mobile {
+                display: block;
+            }
+        }
+
+        &__menu {
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 2.4rem;
+            width: 100%;
+        }
+
+        &__section-name {
+            font-size: 2.4rem;
+        }
+
+        &__section-btn {
+            display: block;
+            width: 2.4rem;
+            height: 2.4rem;
+            background: url(../images/icon-arrow-black.svg);
+            transition: .3s;
+            position: relative;
+
+            .opened & {
+                transform: rotate(180deg);
+                top: .7rem;
+                left: .7rem;
+            }
+        }
+
+        &__section-row {
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 400px;
+        }
+
+        &__section-list {
+            display: none;
+        }
+
+        &__section-link {
+            font-weight: 400;
+        }
+    }
+
+}

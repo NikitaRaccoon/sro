@@ -1,0 +1,9 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<clipPath id="clip244_3057">
+			<rect id="icon/user" width="24.000000" height="24.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip244_3057)">
+		<path id="combo shape" d="M12 11C14.2092 11 16 9.20911 16 7C16 4.79089 14.2092 3 12 3C9.79077 3 8 4.79089 8 7C8 9.20911 9.79077 11 12 11ZM12 21C15.866 21 19 19.2091 19 17C19 14.7909 15.866 13 12 13C8.13403 13 5 14.7909 5 17C5 19.2091 8.13403 21 12 21Z" clip-rule="evenodd" fill="#000000" fill-opacity="0.900000" fill-rule="evenodd"/>
+	</g>
+</svg>

@@ -1,0 +1,336 @@
+.personal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 4rem 6rem 2.4rem 11.6rem;
+    z-index: 10;
+
+    @media (max-width: 991px) {
+        &.scrolled {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #fff;
+
+            &.visible {
+                top: 0;
+                transition: .3s;
+            }
+        }
+
+        h2 {
+            display: none;
+        }
+
+    }
+
+
+    &__logo {
+        width: 6.8rem;
+        height: 4rem;
+        display: none;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .header__burger {
+        display: none;
+    }
+
+    &__user {
+        display: flex;
+        gap: 1.2rem;
+        align-items: center;
+    }
+
+    &__user-photo {
+
+        display: inline-block;
+        width: 6rem;
+        height: 6rem;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    &__user-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+    }
+
+    &__user-name {
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 110%;
+    }
+
+    &__user-info {
+        color: $font2;
+        font-size: 1.6rem;
+        line-height: 160%;
+    }
+
+    &.application {
+
+        align-items: flex-start;
+        height: 6.4rem;
+
+        .personal-header__buttons {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        h2 {
+            max-width: 94rem;
+        }
+
+        .header__search.opened input {
+            width: 30rem;
+        }
+
+        .header__search.opened .header__search-btn {
+            svg {
+                path {
+                    stroke: $color1;
+                }
+            }
+        }
+
+        @media (max-width:991px) {
+            align-items: center;
+        }
+    }
+}
+
+.candidate {
+    .container {
+        padding-left: 11.6rem;
+
+        h2 {
+            margin-bottom: 6.4rem;
+        }
+    }
+
+    &__form {
+        .candidate__form-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.4rem;
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    &__form-item {
+        width: 100%;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    .candidate__form-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    input[type=submit].empty {
+        background-color: #fff;
+        color: $color1;
+        border: .2rem solid $color1;
+        padding: 1rem 3rem;
+    }
+
+    &__form-buttons {
+        display: flex;
+        gap: 1.2rem;
+    }
+}
+
+.candidate-registration {
+
+    padding-top: 4rem;
+
+    .error-message {
+        font-size: 1.6rem;
+        line-height: 160%;
+        color: rgb(255, 84, 84);
+        max-width: 73.6rem;
+        margin-bottom: 5rem;
+    }
+
+    &__form-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+    }
+
+    input[type=submit] {
+        margin: 4rem 0;
+        max-width: max-content;
+    }
+
+    input,
+    .candidate-registration__form-item {
+        width: 100%;
+        max-width: 73.6rem;
+    }
+
+    &.autorization {
+        .info__call-accept {
+            margin: 4rem 0;
+        }
+
+        input[type=submit] {
+            margin: 0;
+        }
+    }
+}
+
+.application {
+
+    h2,
+    h3,
+    h4 {
+        margin-bottom: 2.4rem;
+    }
+
+    .mobile-title {
+        display: none;
+
+        @media (max-width: 768px) {
+            display: block
+        }
+    }
+
+    &__content {
+
+
+
+        p {
+            color: rgb(116, 116, 116);
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 160%;
+            margin-bottom: 4rem;
+        }
+
+        img {
+            margin-bottom: 4rem;
+            max-width: 93rem;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+
+            .mobile-title {
+                display: block;
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 110%;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 991px) {
+
+    .personal-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: .8rem 2rem;
+
+        &__logo {
+            display: inline-block;
+        }
+
+        .header__burger {
+            display: flex;
+        }
+
+        &__user {
+            display: none;
+
+            &.mobile {
+                display: flex;
+            }
+        }
+
+        .btn.empty.nb {
+            display: none;
+        }
+    }
+
+    .candidate {
+
+        padding-top: 4rem;
+
+        .container {
+            padding-left: 2rem;
+
+            h2 {
+                margin-bottom: 4rem;
+            }
+        }
+
+        &__form {
+            .candidate__form-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &__form-item {
+            width: 100%;
+
+            input {
+                width: 100%;
+            }
+        }
+
+        input[type=submit].empty {
+            background-color: #fff;
+            color: $color1;
+            border: .2rem solid $color1;
+            padding: 1rem 3rem;
+        }
+
+        &__form-row {
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        &__form-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+
+            input[type=submit] {
+                width: 100%;
+                max-width: 50rem;
+            }
+        }
+    }
+}
